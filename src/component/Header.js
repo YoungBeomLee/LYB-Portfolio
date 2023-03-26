@@ -35,9 +35,7 @@ const Header = () => {
                 <li>
                   <Link to='/'>Contact Me</Link>
                 </li>
-                <li>
-                  <Link to='/'>택배조회</Link>
-                </li>
+              
               </ul>
           
           </div>
