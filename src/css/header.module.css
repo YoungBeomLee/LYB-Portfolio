@@ -25,15 +25,17 @@ header {
   column-gap: 55px;
 }
 .menu li a {
-  font-size: 1em;
-  width: 50px;
-  height: 100%;
+  font: 600 14px/30px "Montserrat", sans-serif;
+  color: #040c2c;
+  text-transform: uppercase;
   position: relative;
-  padding: 5px;
+  padding: 0;
+  cursor: pointer;
 }
-.menu li a:hover{
+.menu li a:hover {
   color: #f95c55;
 }
+
 .menu li a::before {
   content: "";
   background: #f95c55;
@@ -46,8 +48,8 @@ header {
   transition: all 0.5s 0.2s;
   transform-origin: center;
 }
-.menu li a:hover::before{
-    transform: scaleX(1);
+.menu li a:hover::before ,.menu li a:active::before{
+  transform: scaleX(1);
 }
 
 .logoWrap a {

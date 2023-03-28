@@ -1,98 +1,134 @@
-.bannerWrap{
-    width: 100%;
-    background-color: blue;
-    height: 720px;
+.bannerWrap {
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.innerWrap{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: orange;
-    height: 100%;
-    display: table;
+.innerWrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: table;
+  height: 100%;
 }
-.bannerText{
-    width: 100%;
-    position: relative;
-    left: 0%;
-    font-size: 14px;
-    line-height: 26px;
-    vertical-align: middle;
-    display: table-cell;
-    position: static;
-    height: 270px;
-   
+.bannerText {
+  max-width: 1140px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 26px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  min-height: 100vh;
 }
-.bannerText a{
-    background: #f95c55;
-    font-size: 12px;
-    line-height: 45px;
-    letter-spacing: 0px;
-    height: 45px;
-    color: #fff;
-    width: 150px;
-    position: relative;
-    top: 70px;
-    margin: 10px 0 0;
-    text-align: center;
-    border-color: #fff;
-    cursor: pointer;
-    font-style: normal;
-    font-weight: 600;
-    animation: text-one-by-one 1.2s 1 cubic-bezier(.165,.84,.44,1) 0.2s;
-    animation-fill-mode: both;
-    display: inline-block;
-    transition: color .1s;
-    
+.bannerText h4 {
+  font-size: 22px;
+  letter-spacing: 0;
+  padding: 10px 0 30px;
+  color: #040c2c;
 }
-.bannerText a:hover{
-    color: #ffffff !important;
-    background-color: #303030 !important;
+
+.bannerText h4 span {
+  font-weight: 700;
 }
 
 .bannerName h2 {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    line-height: 60px;
-    font-style: normal;
-    font-weight: 700;
-    text-shadow: none;
-    letter-spacing: 0px;
-    text-transform: none;
-    margin-bottom: 20px;
-    animation: text-one-by-one 1.2s 1 cubic-bezier(.165,.84,.44,1) 0s;
-    animation-fill-mode: both;
-}
-.bannerDesc{
-    text-shadow: none;
-    color: rgb(255, 255, 255);
-    font-size: 26px;
-    line-height: 29px;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 3px;
-    padding-bottom: 6px;
-    letter-spacing: 0px;
-    animation: text-one-by-one 1.2s 1 cubic-bezier(.165,.84,.44,1) 0.1s;
-    animation-fill-mode: both;
-}
-.bannerImgbox{
+  font-family: "Montserrat", sans-serif;
+  color: #040c2c;
+  font-size: 75px;
+  margin: 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  margin-bottom: 20px;
+  animation-name: fadeInUp;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
 
+  line-height: 1.2;
+}
+.bannerDesc {
+  text-shadow: none;
+  color: #040c2c;
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 2px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0px;
+  animation-name: fadeInUp;
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-fill-mode: both;
+}
+.gitHub{
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+    border:1px solid #ccc;
+    border-radius: 25px;
+    color:#040c2c;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.gitHub:hover{
+    background:rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+    box-shadow:2px 2px 2px 2px gray;
+}
+.gitHub span{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 2.5em;
+   
+}
+.faGithub{
+    width:100px;
+    height: 100px;
+    padding-right: 30px;
+    margin: 20px 0;
+}
+
+.circleOne {
+  position: absolute;
+  top: -15px;
+  left: -150px;
+  opacity: 0.6;
+  animation: spins 1.5s linear infinite;
 }
 /* keyframes */
-@keyframes text-one-by-one {
-    0% {
-        top: 70px;
-        opacity: 0;
-    }
-    
-    50% {
-        top: 45px;
-        opacity: 0;
-    }
-    100% {
-        top: 0;
-        opacity: 1;
-    }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes spins {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: rotate(359deg);
+  }
 }
