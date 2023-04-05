@@ -1,21 +1,21 @@
 header {
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid #eee;
+ 
 }
 .gnbWrap {
   width: 100%;
   padding-top: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .gnbMenu {
-  padding-top: 20px;
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  
 }
 .menu {
   display: flex;
@@ -48,12 +48,13 @@ header {
   transition: all 0.5s 0.2s;
   transform-origin: center;
 }
-.menu li a:hover::before ,.menu li a:active::before{
+.menu li a:hover::before,
+.menu li a:active::before {
   transform: scaleX(1);
 }
 
 .logoWrap a {
-  height: 64px;
+  height: 60px;
   display: inline-block;
 }
 .logoWrap a h1 {
