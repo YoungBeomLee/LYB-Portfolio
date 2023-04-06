@@ -35,8 +35,23 @@
 
 .bannerText h4 span {
   font-weight: 700;
+  white-space: nowrap;
+  position: absolute;
+  color: transparent;
+  transform: translate(-80%, 150%);
 }
-
+.typeCss::before {
+  content: "코드톱니바퀴 이영범입니다.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: black;
+  border-right: 1px solid black;
+  animation: typing 5s steps(31) infinite;
+}
 .bannerName h2 {
   font-family: "Montserrat", sans-serif;
   color: #040c2c;
@@ -51,7 +66,6 @@
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
-
   line-height: 1.2;
 }
 .bannerDesc {
@@ -72,33 +86,44 @@
   opacity: 1;
   animation-fill-mode: both;
 }
-.gitHub{
-    margin: 0 auto;
-    width: 30%;
-    height: 100%;
-    border:1px solid #ccc;
-    border-radius: 25px;
-    color:#040c2c;
-    display: flex;
-    justify-content: space-around;
-    
+.iconList {
+  margin: 0 auto;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
-.gitHub:hover{
-    background:rgba(0, 0, 0, 0.3);
-    transition: all 1s;
-    box-shadow:2px 2px 2px 2px gray;
+.iconList li {
+  margin: 0 3px;
+  box-sizing: border-box;
 }
-.gitHub span{
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 2.5em;
-   
+.iconList li a {
+  background: #040c2c;
+  font-size: 14px;
+  width: 42px;
+  height: 42px;
+  line-height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s linear;
+  text-align: center;
+  color: #fff;
 }
-.faGithub{
-    width:100px;
-    height: 100px;
-    padding-right: 30px;
-    margin: 20px 0;
+.iconList li a:hover {
+  color: #fff;
+  box-shadow: 0 2px 35px 0 rgba(4, 12, 44, 0.5);
+  transform: translateY(-4px);
+}
+
+.iconList span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5em;
+}
+.faGithub {
+  width: 25px;
+  height: 25px;
 }
 
 .circleOne {
@@ -107,6 +132,10 @@
   left: -150px;
   opacity: 0.6;
   animation: spins 1.5s linear infinite;
+}
+.Img{
+  width: 100px;
+  height: 100px;
 }
 /* keyframes */
 @keyframes fadeInUp {
@@ -130,5 +159,17 @@
   100% {
     -webkit-transform: translateY(0);
     transform: rotate(359deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
