@@ -1,0 +1,146 @@
+.aboutContainer {
+  overflow: hidden;
+  padding-top: 80px;
+  width: 100%;
+  background: #fafafa;
+  height: 700px;
+}
+.inner {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+.leftBox {
+  align-items: center !important;
+  display: flex !important;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.aboutContent {
+  opacity: 1;
+  padding-right: 88px;
+  padding-bottom: 50px;
+}
+
+.rightBox {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.aboutContent h2 {
+  opacity: 1;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  white-space: pre-line;
+  color: #040c2c;
+}
+.aboutContent h6 {
+  opacity: 1;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.aboutContent p {
+  opacity: 1;
+  padding-bottom: 30px;
+  
+}
+.aboutContent .ContactBtn {
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 500;
+  color: #040c2c;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #040c2c;
+  padding: 10px 36px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  min-width: 140px;
+  text-align: center;
+  display: inline-block;
+}
+.ContactBtn:hover {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  background-color: #040c2c;
+}
+
+.ContactBtn:active {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.downBtn {
+  opacity: 1;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #040c2c;
+  padding: 10px 36px;
+  border-radius: 3px;
+  position: relative;
+  
+  z-index: 1;
+  
+  cursor: pointer;
+  min-width: 140px;
+  text-align: center;
+  display: inline-block;
+}
+.downBtn:hover {
+  color: #fff;
+  background-color: #040c2c;
+  outline: none;
+  box-shadow: none;
+}
+.aboutImg img {
+  opacity: 1;
+  margin-left: -50px;
+  vertical-align: middle;
+  position: absolute;
+  left: 70%;
+}
+
+/* keyframes */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 100%, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

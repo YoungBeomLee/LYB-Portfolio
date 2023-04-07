@@ -1,12 +1,30 @@
-import React from "react";
+import {useLayoutEffect, useRef, useEffect} from "react";
 import BannerContainer from "../UI/BannerContainer";
 import styles from "../css/Banner.module.css";
 import circle from "../img/circle.png";
 import { FaGithub } from "react-icons/fa";
-import { Fade } from "react-awesome-reveal";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
+const Banner = () => {
+  const firstRef = useRef(null);
+    const secondRef = useRef(null);
 
-const Header = () => {
+    useEffect(() => {
+        const first = firstRef.current;
+        const second = secondRef.current;
+
+        const tl = gsap.timeline({ repeat: -1 });
+
+        tl.to(first, { duration: 2.5, text: "코딩톱니바퀴 이영범입니다.",delimiter : " "  ,split: "chars", ease: "Linear.easeNone" })
+        .to(first, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" })
+        .to(second, { duration: 2.5, text: "코드와코드를 이어주는", split: "chars", ease: "Linear.easeNone" })
+        .to(second, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" });
+    }, []);
+  
+  
   return (
     <>
       <BannerContainer>
@@ -18,7 +36,7 @@ const Header = () => {
             <div className={styles.bannerText}>
               <div className={styles.bannerName}>
                 <h2>
-                  <span>YoungBeom Lee</span>
+                  <span>YoungBeomLee's Portfolio</span>
                 </h2>
               </div>
               <p className={styles.bannerDesc}>
@@ -26,7 +44,8 @@ const Header = () => {
               </p>
               <h4>
                 "Specialized in" &nbsp;
-                <span className={styles.typeCss}>코드톱니바퀴 이영범입니다.</span>
+                <span className={styles.typeCss} ref={firstRef}></span>
+                <span className={styles.typeCss2} ref={secondRef}></span>
               </h4>
               <ul className={styles.iconList}>
                 <li>
@@ -59,4 +78,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Banner;
