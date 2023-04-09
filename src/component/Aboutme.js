@@ -10,62 +10,42 @@ const Aboutme = () => {
   const ImageRef = useRef(null);
   const h2Ref = useRef(null);
   const h6Ref = useRef(null);
-  const aRef = useRef(null);
+  const a1Ref = useRef(null);
+  const a2Ref = useRef(null);
   const pRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(pRef.current, {
-      y: -30,
-      duration: 1,
-      ease: "linear",
-      scrollTrigger: {
-        trigger: pRef.current,
-        start: "bottom center",
-        end: "+=300",
-      },
+   
+
+    
+    ScrollTrigger.create({
+      trigger: pRef.current,
+      animation: gsap.to(pRef.current, { opacity:1,y: -30, duration: 1.4, ease: "power2.inOut" }) // ScrollTrigger와 연결할 애니메이션 설정
     });
-    gsap.to(aRef.current, {
-      y: -30,
-      duration: 1,
-      ease: "linear",
-      scrollTrigger: {
-        trigger: aRef.current,
-         
-        end: "+=300",
-      },
+    
+    ScrollTrigger.create({
+      trigger: a1Ref.current,
+      animation: gsap.to(a1Ref.current, { opacity:1,y: -30, duration: 1.4, ease: "power2.inOut" }) // ScrollTrigger와 연결할 애니메이션 설정
     });
-    gsap.to(h6Ref.current, {
-      y: -30,
-      duration: 1,
-      ease: "linear",
-      scrollTrigger: {
-        trigger: h6Ref.current,
-        start: "bottom center",
-        end: "+=300",
-      },
+    ScrollTrigger.create({
+      trigger: a2Ref.current,
+      animation: gsap.to(a2Ref.current, { opacity:1,y: -30, duration: 1.4, ease: "power2.inOut" }) // ScrollTrigger와 연결할 애니메이션 설정
     });
-    gsap.to(h2Ref.current, {
-      y: -30,
-      duration: 1,
-      ease: "linear",
-      scrollTrigger: {
-        trigger: h2Ref.current,
-        start: "bottom center",
-        end: "+=300",
-      },
+    ScrollTrigger.create({
+      trigger: h6Ref.current,
+      animation: gsap.to(h6Ref.current, { opacity:1,y: -30, duration: 1.2, ease: "power2.inOut" }) // ScrollTrigger와 연결할 애니메이션 설정
     });
-    gsap.to(ImageRef.current, {
-      x: -200,
-      duration: 1,
-      ease: "linear",
-      scrollTrigger: {
-        trigger: ImageRef.current,
-        start: "right center",
-        end: "+=300",
-      },
+    ScrollTrigger.create({
+      trigger: h2Ref.current,
+      animation: gsap.to(h2Ref.current, { opacity:1,y: -30, duration: 1, ease: "power2.inOut" }) // ScrollTrigger와 연결할 애니메이션 설정
+    });
+    ScrollTrigger.create({
+      trigger: ImageRef.current,
+      animation: gsap.to(ImageRef.current, { opacity:1,x: -200, duration: 2, ease: "power2.inOut",  
+       }) // ScrollTrigger와 연결할 애니메이션 설정
     });
   }, []);
-
+ 
   return (
     <>
       <div className={styles.aboutContainer}>
@@ -77,16 +57,13 @@ const Aboutme = () => {
                 <h6 ref={h6Ref}>
                   비쥬얼 디자이너 & 프론트엔드 개발자 <b style={{ color: "#000", fontWeight: 700, fontSize: 20 }}>이영범</b>입니다.
                 </h6>
-                <p ref={pRef}>
-                  -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.
-                  <br />
-                  -저는 피그마를 사용하여 사용자 인터페이스(UI) 및 사용자 경험(UX) 디자인을 작업하고, 디자인 시안을 제작하며, 효과적인 디자인 프로세스를 구축하는데 능숙합니다.또한, 깃허브를 활용하여 버전 관리와 협업을 효율적으로 관리하며, 웹 개발 프로젝트를 원활하게 진행합니다.
-                  <br /> -VSCode를 활용하여 코드 작성 및 디버깅을 수행하며, 개발 생산성을 극대화합니다. React를 사용하여 eact 컴포넌트를 활용하여 모듈화된 코드를 작성하고, 상태 관리와 라우팅을 효과적으로 구현합니다. React의 생태계를 잘 활용하여 풍부한 사용자 경험을 제공하는데 주력하고 있습니다.
-                </p>
-                <a href="#" ref={aRef} className={styles.ContactBtn}>
+                <p ref={pRef}>-피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.
+                -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.
+                -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.</p>
+                <a href="#" ref={a1Ref} className={styles.ContactBtn}>
                   Contact me
                 </a>
-                <a href="#"  ref={aRef} className={styles.downBtn}>
+                <a href="#" ref={a2Ref} className={styles.downBtn}>
                   이력서 다운로드
                 </a>
               </div>

@@ -58,7 +58,6 @@
 .aboutContent p {
   opacity: 1;
   padding-bottom: 30px;
-  
 }
 .aboutContent .ContactBtn {
   opacity: 1;
@@ -99,9 +98,9 @@
   padding: 10px 36px;
   border-radius: 3px;
   position: relative;
-  
+
   z-index: 1;
-  
+
   cursor: pointer;
   min-width: 140px;
   text-align: center;
@@ -114,11 +113,11 @@
   box-shadow: none;
 }
 .aboutImg img {
-  opacity: 1;
   margin-left: -50px;
   vertical-align: middle;
   position: absolute;
   left: 70%;
+  opacity: 0;
 }
 
 /* keyframes */
