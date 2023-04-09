@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import BannerContainer from "../UI/BannerContainer";
 import styles from "../css/Aboutme.module.css";
 import person from "../img/person.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
