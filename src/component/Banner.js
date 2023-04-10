@@ -1,4 +1,4 @@
-import {useLayoutEffect, useRef, useEffect} from "react";
+import { useLayoutEffect, useRef, useEffect } from "react";
 import BannerContainer from "../UI/BannerContainer";
 import styles from "../css/Banner.module.css";
 import circle from "../img/circle.png";
@@ -10,21 +10,20 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const Banner = () => {
   const firstRef = useRef(null);
-    const secondRef = useRef(null);
+  const secondRef = useRef(null);
 
-    useEffect(() => {
-        const first = firstRef.current;
-        const second = secondRef.current;
+  useEffect(() => {
+    const first = firstRef.current;
+    const second = secondRef.current;
 
-        const tl = gsap.timeline({ repeat: -1 });
+    const tl = gsap.timeline({ repeat: -1 });
 
-        tl.to(first, { duration: 2.5, text: "코딩톱니바퀴 이영범입니다.",delimiter : " "  ,split: "chars", ease: "Linear.easeNone" })
-        .to(first, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" })
-        .to(second, { duration: 2.5, text: "코드와코드를 이어주는", split: "chars", ease: "Linear.easeNone" })
-        .to(second, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" });
-    }, []);
-  
-  
+    tl.to(first, { duration: 2.5, text: "코딩톱니바퀴 이영범입니다.", delimiter: " ", split: "chars", ease: "Linear.easeNone" })
+      .to(first, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" })
+      .to(second, { duration: 2.5, text: "코드와코드를 이어주는", split: "chars", ease: "Linear.easeNone" })
+      .to(second, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" });
+  }, []);
+
   return (
     <>
       <BannerContainer>
@@ -69,7 +68,6 @@ const Banner = () => {
                   </a>
                 </li>
               </ul>
-              
             </div>
           </div>
         </div>

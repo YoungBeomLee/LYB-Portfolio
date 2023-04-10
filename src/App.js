@@ -6,6 +6,7 @@ import Header from './component/Header';
 import Banner from './component/Banner';
 import Aboutme from './component/Aboutme';
 import Footer from './component/Footer';
+import Portfolio from './component/Portfolio';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Banner />
       <Aboutme />
+      <Portfolio />
       
     </div>
   );
