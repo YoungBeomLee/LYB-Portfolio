@@ -57,10 +57,9 @@ const Aboutme = () => {
                   비쥬얼 디자이너 & 프론트엔드 개발자 <b style={{ color: "#000", fontWeight: 700, fontSize: 20 }}>이영범</b>입니다.
                 </h6>
                 <p ref={pRef}>-피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.
-                -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.
-                -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. -반응형 웹 디자인을 고려하여 사용자 경험을 중요하게 여기며, 사용자 중심의 디자인과 개발을 추구합니다.</p>
+                -피그마, 깃허브, VSCode, React를 중심으로 다양한 프로젝트를 만들어봤습니다. </p>
                 <a href="#" ref={a1Ref} className={styles.ContactBtn}>
-                  Contact me
+                  연락처
                 </a>
                 <a href="#" ref={a2Ref} className={styles.downBtn}>
                   이력서 다운로드

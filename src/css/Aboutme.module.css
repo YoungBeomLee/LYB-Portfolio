@@ -98,9 +98,7 @@
   padding: 10px 36px;
   border-radius: 3px;
   position: relative;
-
   z-index: 1;
-
   cursor: pointer;
   min-width: 140px;
   text-align: center;

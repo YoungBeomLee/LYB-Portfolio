@@ -1,15 +1,15 @@
-.swiper-button-prev {
-  left: 5%;
+.swiper-button-prev{
+  left: 5% !important;
   margin: 0 auto;
 }
 
 .swiper-button-next {
-  right: 5%;
+  right: 5% !important;
   margin: 0 auto;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 50px;
+  bottom: 50px !important;
 }

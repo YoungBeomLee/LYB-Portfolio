@@ -36,14 +36,16 @@
 .bannerText h4 span {
   position: absolute;
   font-weight: 700;
-  transform: translate(-80%, 150%);
+  transform: translate(-90%, 150%);
   display: inline-block;
 }
-.typeCss ,.typeCss2{
+.typeCss,
+.typeCss2 {
   position: relative;
   display: inline-block;
 }
-.typeCss::after,.typeCss2::after {
+.typeCss::after,
+.typeCss2::after {
   content: "";
   position: absolute;
   right: -10px;
@@ -96,6 +98,7 @@
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  padding: 0;
 }
 .iconList li {
   margin: 0 3px;
@@ -134,6 +137,9 @@
   top: -15px;
   left: -150px;
   opacity: 0.6;
+  animation: spins 1.5s linear infinite;
+}
+.setting {
   animation: spins 1.5s linear infinite;
 }
 

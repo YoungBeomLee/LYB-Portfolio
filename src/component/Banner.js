@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
+import { AiFillSetting } from "react-icons/ai";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const Banner = () => {
@@ -45,6 +46,7 @@ const Banner = () => {
                 "Specialized in" &nbsp;
                 <span className={styles.typeCss} ref={firstRef}></span>
                 <span className={styles.typeCss2} ref={secondRef}></span>
+                <AiFillSetting className={styles.setting}></AiFillSetting>
               </h4>
               <ul className={styles.iconList}>
                 <li>
