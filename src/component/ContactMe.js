@@ -14,19 +14,19 @@ const ContactMe = () => {
             </div>
             <ul className={styles.nav}>
               <li>
-                <MdDriveFileRenameOutline></MdDriveFileRenameOutline>
+                
                 <p>이름: 이영범</p>
               </li>
               <li>
-                <HiLocationMarker></HiLocationMarker>
+                
                 <p>주소: 경기도 성남시</p>
               </li>
               <li>
-                <AiFillPhone></AiFillPhone>
+                
                 <p>전화번호 :010-5561-7692</p>
               </li>
               <li>
-                <MdEmail></MdEmail>
+                
                 <p>이메일: krkr127127@naver.com</p>
               </li>
               <li>
