@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../css/ContactMe.module.css";
-import { HiLocationMarker,MdDriveFileRenameOutline,MdEmail,AiFillPhone } from "react-icons/ai";
+import { AiOutlineEdit, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { HiLocationMarker } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 
 const ContactMe = () => {
@@ -9,29 +10,30 @@ const ContactMe = () => {
       <div className={styles.ContactMeContainer}>
         <div className={styles.Inner}>
           <div className={styles.ContactInfoWrap}>
-            <div className={styles.ContactInfo}>
-              <h4>Contact Info</h4>
-            </div>
+            <h4 className={styles.ContactInfo}>Contact Info</h4>
+
             <ul className={styles.nav}>
               <li>
-                
-                <p>이름: 이영범</p>
+                <AiOutlineEdit></AiOutlineEdit>
+                <p>이름: <span>이영범</span></p>
               </li>
               <li>
-                
-                <p>주소: 경기도 성남시</p>
+                <HiLocationMarker></HiLocationMarker>
+                <p>주소: <span>경기도 성남시</span></p>
               </li>
               <li>
-                
-                <p>전화번호 :010-5561-7692</p>
+                <AiOutlinePhone></AiOutlinePhone>
+                <p>전화번호: <span>010-5561-7692</span></p>
               </li>
               <li>
-                
-                <p>이메일: krkr127127@naver.com</p>
+                <AiOutlineMail></AiOutlineMail>
+                <p>이메일: <span>krkr127127@naver.com</span></p>
               </li>
               <li>
                 <FaGithub></FaGithub>
-                <p>깃허브주소: <a href="https://github.com/YoungBeomLee">https://github.com/YoungBeomLee</a></p>
+                <p>
+                  깃허브주소: <span><a href="https://github.com/YoungBeomLee">https://github.com/YoungBeomLee</a></span>
+                </p>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import SkillBar from "react-skillbars";
-import styles from "../css/Skils.module.css"
+import styles from "../css/Skils.module.css";
 import "../css/Skils.css";
 
 const Skills = () => {
@@ -9,23 +9,23 @@ const Skills = () => {
       type: "HTML",
       level: 100,
       color: {
-        bar: "#3498db",
-        title: { text: "#fff", background: "#2980b9" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
     {
       type: "CSS",
       level: 80,
       color: {
-        bar: "#4288d0",
-        title: { text: "#fff", background: "#124e8c" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
     {
       type: "Javascript",
       level: 70,
       color: {
-        bar: "#2c3e50",
+        bar: "#5a68a5",
         title: { text: "#fff", background: "#2c3e50" },
       },
     },
@@ -34,45 +34,44 @@ const Skills = () => {
       level: 80,
       color: {
         bar: "#5a68a5",
-        title: { text: "#fff", background: "#46465e" },
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
- 
   ];
-  const skills2=[
+  const skills2 = [
     {
       type: "BootStrap",
       level: 75,
       color: {
-        bar: "#525252",
-        title: { text: "#fff", background: "#333333" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
     {
       type: "React",
       level: 80,
       color: {
-        bar: "black",
-        title: { text: "#111", background: "#fff" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
     {
       type: "node.js",
       level: 70,
       color: {
-        bar: "black",
-        title: { text: "#111", background: "#fff" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
     {
       type: "vue.js",
-      level: 0,
+      level: 70,
       color: {
-        bar: "#2ecc71",
-        title: { text: "#fff", background: "#27ae60" },
+        bar: "#5a68a5",
+        title: { text: "#fff", background: "#2c3e50" },
       },
     },
-  ]
+  ];
 
   return (
     <>

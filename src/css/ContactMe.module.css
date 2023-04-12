@@ -1,45 +1,51 @@
-.ContactMeContainer{
-    padding: 120px 0;
-    line-height: 30px;
-    font-size: 16px;
-    font-family: "Open Sans",sans-serif;
-    color: #797979;
-    font-weight: 400;
+.ContactMeContainer {
+  padding: 120px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #797979;
+  font-weight: 400;
+  
 }
-.Inner{
-    max-width: 1140px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.Inner {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.ContactInfoWrap{
-    width: 100%;
-}
-.ContactInfo{
-
-}
-.ContactInfo h4{
-    font: 700 35px/40px "Montserrat",sans-serif;
-    color: #040c2c;
-    text-transform: capitalize;
-    padding-bottom: 24px;
-}
-.nav{
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    display: block;
-    padding-right: 60px;
-    margin-top: 0;
-}
-.nav li{
-    cursor: pointer;
-    display: block;
+.ContactInfoWrap {
+  width: 100%;
 }
 
-.nav li p{
-    color: #797979;
-    font: 400 16px/28px "Montserrat",sans-serif;
+.ContactInfo {
+  font: 700 35px/40px "Montserrat", sans-serif;
+  color: #040c2c;
+  text-transform: capitalize;
+  padding-bottom: 24px;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: block;
+  padding-right: 60px;
+  margin-top: 0;
+}
+.nav li {
+  cursor: pointer;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.nav svg {
+  margin-right: 20px;
+}
+.nav li p {
+  color: #797979;
+  font: 400 16px/28px "Montserrat", sans-serif;
+}
+.nav li p span {
+  margin-left: 20px;
 }

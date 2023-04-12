@@ -1,7 +1,11 @@
 .skillbar{
     margin-bottom: 30px;
     position: relative;
+    
 }
 .skillbar-percent{
-    
+    position: absolute;
+    color:#040c2c; 
+    left: 110%;
+    font-size: 16px;
 }

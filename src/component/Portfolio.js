@@ -10,6 +10,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 import project1 from "../img/project1Full.png";
+import fourniture from "../img/4niture.png";
+import ticatalk from "../img/ticatalk.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 
@@ -33,8 +35,9 @@ const Portfolio = () => {
 
   let slideobj = [
     {
+      keyword:"#HTML #CSS #Jquery",
       imgUrl: project1,
-      title: "한국가스공사 리뉴얼페이지",
+      title: "한국가스공사",
       content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
       date: "2022.12.16~2023.01.12 (3주)",
       contribution: "100%",
@@ -46,6 +49,7 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/project1",
     },
     {
+      keyword:"#HTML #CSS #Jquery #PHP",
       imgUrl: project1,
       title: "한국가스공사 리뉴얼페이지",
       content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
@@ -59,7 +63,8 @@ const Portfolio = () => {
       link2: "https://youngbeomlee.github.io/project1/",
     },
     {
-      imgUrl: project1,
+      keyword:"#BootStrap #SCSS #API",
+      imgUrl: ticatalk,
       title: "tikcatalk",
       content: "팀프로젝트1. 티켓톡",
       date: "2023.2.6~2023.02.22 (2주)",
@@ -72,7 +77,8 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/teamproject_ticatalk",
     },
     {
-      imgUrl: project1,
+      keyword:"#React #SQL #Node.js #sequlize",
+      imgUrl: fourniture,
       title: "4niture",
       content: "팀프로젝트2. 가구쇼핑몰",
       date: "2023.03.15~2023.04.04 (3주)",
@@ -85,7 +91,8 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/4niture-react-front",
     },
     {
-      imgUrl: project1,
+      keyword:"#React-Native #Android Studio",
+      imgUrl: fourniture,
       title: "react-native-4niture",
       content: "개인프로젝트 리액트네이티브. 가구쇼핑몰",
       date: "2023.03.15~2023.04.12 (3주)",
@@ -121,7 +128,7 @@ const Portfolio = () => {
           loop
           zoom={true}
         >
-          {slideobj.map((item) => {
+          {slideobj.map((item,idx) => {
             return (
               <SwiperSlide>
                 <div className={styles.PortfolioContainer}>
@@ -133,9 +140,9 @@ const Portfolio = () => {
                     </div>
                     <div className={styles.portfolioRightbox}>
                       <div className={styles.portfolioTitlebox}>
-                        <h2>{item.title}</h2>
+                        <h2><span style={{marginRight:50}}>0{idx+1}</span><span>{item.title}</span></h2>
                       </div>
-                      <hr style={{ width: "70%", marginTop: 20 }} />
+                      <div className={styles.portflioKeyword}>{item.keyword}</div>
                       <div className={styles.portfolioTextbox}>
                         <ul className={styles.PortfolioTextul}>
                           <li>내용: {item.content}</li>

@@ -134,10 +134,11 @@
 
 .circleOne {
   position: absolute;
-  top: -15px;
+  top: 0;
   left: -150px;
   opacity: 0.6;
   animation: spins 1.5s linear infinite;
+  z-index: 10;
 }
 .setting {
   animation: spins 1.5s linear infinite;

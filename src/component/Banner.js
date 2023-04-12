@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import { AiFillSetting } from "react-icons/ai";
 
+
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 const Banner = () => {
   const firstRef = useRef(null);
