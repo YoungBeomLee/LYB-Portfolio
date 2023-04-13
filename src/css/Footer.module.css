@@ -1,0 +1,42 @@
+.FooterContainer {
+  background: #040c2c;
+  position: relative;
+  padding: 60px 0;
+}
+.Inner {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Content {
+  text-align: center;
+}
+.Content a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.logoImg {
+}
+.Content ul li a{
+    width: 35px;
+    height: 35px;
+}
+.Content ul li a .Icon {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s linear;
+  text-align: center;
+}
+.Content ul li a:hover .Icon{
+    background: #fff;
+    color: #494949;
+}

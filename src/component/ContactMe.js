@@ -15,24 +15,24 @@ const ContactMe = () => {
             <ul className={styles.nav}>
               <li>
                 <AiOutlineEdit></AiOutlineEdit>
-                <p>이름: <span>이영범</span></p>
+                <p><span>이름:</span> <span>이영범</span></p>
               </li>
               <li>
                 <HiLocationMarker></HiLocationMarker>
-                <p>주소: <span>경기도 성남시</span></p>
+                <p><span>주소:</span> <span>경기도 성남시</span></p>
               </li>
               <li>
                 <AiOutlinePhone></AiOutlinePhone>
-                <p>전화번호: <span>010-5561-7692</span></p>
+                <p><span>전화번호:</span> <span>010-5561-7692</span></p>
               </li>
               <li>
                 <AiOutlineMail></AiOutlineMail>
-                <p>이메일: <span>krkr127127@naver.com</span></p>
+                <p><span>이메일:</span> <span>krkr127127@naver.com</span></p>
               </li>
               <li>
                 <FaGithub></FaGithub>
                 <p>
-                  깃허브주소: <span><a href="https://github.com/YoungBeomLee">https://github.com/YoungBeomLee</a></span>
+                  <span>깃허브주소:</span> <span><a href="https://github.com/YoungBeomLee">https://github.com/YoungBeomLee</a></span>
                 </p>
               </li>
             </ul>

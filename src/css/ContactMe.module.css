@@ -5,7 +5,6 @@
   font-family: "Open Sans", sans-serif;
   color: #797979;
   font-weight: 400;
-  
 }
 .Inner {
   max-width: 1140px;
@@ -35,9 +34,9 @@
 }
 .nav li {
   cursor: pointer;
-  display: block;
   display: flex;
   align-items: center;
+  text-align: justify;
 }
 .nav svg {
   margin-right: 20px;
@@ -45,6 +44,8 @@
 .nav li p {
   color: #797979;
   font: 400 16px/28px "Montserrat", sans-serif;
+  display: flex;
+  
 }
 .nav li p span {
   margin-left: 20px;

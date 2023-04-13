@@ -2,9 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../UI/Container";
 import styles from "../css/header.module.css";
-import logoImg from "../img/YBLogo.png";
-
+import lottieAni2 from "../cube2.json";
+import lottie from "lottie-web";
 const Header = () => {
+  const cube2 = React.useRef();
+  React.useEffect(() => {
+    lottie.loadAnimation({
+      container: cube2.current,
+      animationData: lottieAni2,
+      loop: true,
+      autoplay: true,
+    });
+  }, []);
+
   return (
     <header>
       <Container>
@@ -12,7 +22,7 @@ const Header = () => {
           <div className={styles.logoWrap}>
             <Link to="/">
               <h1>
-                <img src={logoImg} alt="logo" />
+              <span ref={cube2} style={{ position: "absolute", top: 0, width: 100, height: 100 }}></span>
               </h1>
             </Link>
           </div>

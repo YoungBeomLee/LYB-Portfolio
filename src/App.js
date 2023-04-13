@@ -25,6 +25,7 @@ function App() {
       <Portfolio />
       <Skills/>
       <ContactMe/>
+      <Footer/>
     </div>
   );
 }

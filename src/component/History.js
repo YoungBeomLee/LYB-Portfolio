@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../UI/Container";
 import styles from "../css/History.module.css";
 
-const Service = () => {
+const History = () => {
   return (
     <div className={styles.ServiceContainer}>
       <Container>
@@ -45,4 +45,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default History;

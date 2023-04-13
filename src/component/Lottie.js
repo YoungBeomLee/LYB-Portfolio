@@ -12,6 +12,6 @@ const Lottie = () => {
       autoplay: true,
     });
   }, []);
-  return <span ref={cube} style={{ position: "absolute", top: 10, width: 50, height: 50 }}></span>;
+  return <span ref={cube} style={{ position: "absolute", top: 0, width: 100, height: 100 }}></span>;
 };
 export default Lottie;
