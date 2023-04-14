@@ -20,10 +20,10 @@ const Banner = () => {
 
     const tl = gsap.timeline({ repeat: -1 });
 
-    tl.to(first, { duration: 2.5, text: "코딩톱니바퀴 이영범입니다.", delimiter: " ", split: "chars", ease: "Linear.easeNone" })
-      .to(first, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" })
-      .to(second, { duration: 2.5, text: "코드와코드를 이어주는", split: "chars", ease: "Linear.easeNone" })
-      .to(second, { duration: 1.7, text: "", split: "", ease: "Linear.easeNone" });
+    tl.to(first, { duration: 5.5, text: "이번네트워크는 영범포트입니다. 내리실 문은 프론트입니다. ", delimiter: " ", split: "chars", ease: "Linear.easeNone" })
+      .to(first, { duration: 3, text: "", split: "", ease: "Linear.easeNone" })
+      .to(second, { duration: 5.5, text: "This Network is Youngbeom Port Station. The doors are on  Frontfolio. ", split: "chars", ease: "Linear.easeNone" })
+      .to(second, { duration: 3, text: "", split: "", ease: "Linear.easeNone" });
   }, []);
 
   return (
@@ -44,7 +44,7 @@ const Banner = () => {
                 <span>신입 프론트엔드개발자 이영범입니다.</span>
               </p>
               <h4>
-                "Specialized in" &nbsp;
+                "영범포트" &nbsp;
                 <span className={styles.typeCss} ref={firstRef}></span>
                 <span className={styles.typeCss2} ref={secondRef}></span>
                 <AiFillSetting className={styles.setting}></AiFillSetting>

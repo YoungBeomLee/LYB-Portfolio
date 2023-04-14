@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Lottie/>
       <Banner />
       <Aboutme />
       <History/>

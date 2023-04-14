@@ -7,7 +7,7 @@ const Skills = () => {
   const skills = [
     {
       type: "HTML",
-      level: 100,
+      level: 90,
       color: {
         bar: "#5a68a5",
         title: { text: "#fff", background: "#2c3e50" },
@@ -31,7 +31,7 @@ const Skills = () => {
     },
     {
       type: "Jquery",
-      level: 80,
+      level: 75,
       color: {
         bar: "#5a68a5",
         title: { text: "#fff", background: "#2c3e50" },
@@ -41,7 +41,7 @@ const Skills = () => {
   const skills2 = [
     {
       type: "BootStrap",
-      level: 75,
+      level: 80,
       color: {
         bar: "#5a68a5",
         title: { text: "#fff", background: "#2c3e50" },
@@ -49,7 +49,7 @@ const Skills = () => {
     },
     {
       type: "React",
-      level: 80,
+      level: 75,
       color: {
         bar: "#5a68a5",
         title: { text: "#fff", background: "#2c3e50" },

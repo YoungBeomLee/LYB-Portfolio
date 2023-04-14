@@ -1,11 +1,18 @@
 .swiper-button-prev{
   left: 5% !important;
   margin: 0 auto;
+  
+}
+.swiper-button-prev:after{
+  color:#040c2c;
 }
 
 .swiper-button-next {
   right: 5% !important;
   margin: 0 auto;
+}
+.swiper-button-next::after{
+  color:#040c2c;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -13,4 +20,8 @@
 .swiper-pagination-fraction {
   bottom: 50px !important;
   
+  
+}
+.swiper-pagination-bullet ,.swiper-pagination-bullet-active{
+  background:#040c2c !important;
 }

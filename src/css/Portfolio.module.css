@@ -55,8 +55,12 @@
   font-weight: 700;
   color: #333;
   padding: 110px 0 90px;
-  margin:0 12%;
-  width:60%;
+  margin-left:12%;
+  width:70%;
+}
+.portfolioTitlebox h2 span {
+margin-right: 20px;
+margin-left: 20px;
 }
 .PortfolioTextul {
   display: block;

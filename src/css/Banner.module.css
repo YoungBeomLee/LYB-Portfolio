@@ -31,12 +31,13 @@
   letter-spacing: 0;
   padding: 10px 0 30px;
   color: #040c2c;
+  font-family: "pretendard",sans-serif;
 }
 
 .bannerText h4 span {
   position: absolute;
   font-weight: 700;
-  transform: translate(-90%, 150%);
+  transform: translate(-70%, 150%);
   display: inline-block;
 }
 .typeCss,

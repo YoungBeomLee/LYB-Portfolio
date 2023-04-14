@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "../css/Portfolio.css";
 import styles from "../css/Portfolio.module.css";
-import { Navigation, Pagination, Scrollbar, A11y, Zoom } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Zoom,Autoplay} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -116,17 +116,21 @@ const Portfolio = () => {
         <Swiper
           className={styles.Swiper}
           // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
-          spaceBetween={50}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Zoom,Autoplay]}
+          spaceBetween={100}
           slidesPerView={1}
           navigation
-          speed={200}
+          speed={500}
           pagination={{ clickable: true }}
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log("slide change")}
           // onSlideChange={() => console.log("slide change")}
           loop
           zoom={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
         >
           {slideobj.map((item,idx) => {
             return (
@@ -140,7 +144,7 @@ const Portfolio = () => {
                     </div>
                     <div className={styles.portfolioRightbox}>
                       <div className={styles.portfolioTitlebox}>
-                        <h2><span style={{marginRight:50}}>0{idx+1}</span><span>{item.title}</span></h2>
+                        <h2><span>0{idx+1}</span><span>{item.title}</span></h2>
                       </div>
                       <div className={styles.portflioKeyword}>{item.keyword}</div>
                       <div className={styles.portfolioTextbox}>
