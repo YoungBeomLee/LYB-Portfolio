@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import "../css/Portfolio.css";
 import styles from "../css/Portfolio.module.css";
-import { Navigation, Pagination, Scrollbar, A11y, Zoom,Autoplay} from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, Zoom, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -35,7 +35,7 @@ const Portfolio = () => {
 
   let slideobj = [
     {
-      keyword:"#HTML #CSS #Jquery",
+      keyword: "#HTML #CSS #Jquery",
       imgUrl: project1,
       title: "한국가스공사",
       content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
@@ -49,7 +49,7 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/project1",
     },
     {
-      keyword:"#HTML #CSS #Jquery #PHP",
+      keyword: "#HTML #CSS #Jquery #PHP",
       imgUrl: project1,
       title: "한국가스공사 리뉴얼페이지",
       content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
@@ -63,8 +63,9 @@ const Portfolio = () => {
       link2: "https://youngbeomlee.github.io/project1/",
     },
     {
-      keyword:"#BootStrap #SCSS #API",
+      keyword: "#BootStrap #SCSS #API",
       imgUrl: ticatalk,
+      member: 4,
       title: "tikcatalk",
       content: "팀프로젝트1. 티켓톡",
       date: "2023.2.6~2023.02.22 (2주)",
@@ -77,8 +78,9 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/teamproject_ticatalk",
     },
     {
-      keyword:"#React #SQL #Node.js #sequlize",
+      keyword: "#React #SQL #Node.js #sequlize",
       imgUrl: fourniture,
+      member: 4,
       title: "4niture",
       content: "팀프로젝트2. 가구쇼핑몰",
       date: "2023.03.15~2023.04.04 (3주)",
@@ -91,7 +93,7 @@ const Portfolio = () => {
       link2: "https://github.com/YoungBeomLee/4niture-react-front",
     },
     {
-      keyword:"#React-Native #Android Studio",
+      keyword: "#React-Native #Android Studio",
       imgUrl: fourniture,
       title: "react-native-4niture",
       content: "개인프로젝트 리액트네이티브. 가구쇼핑몰",
@@ -116,7 +118,7 @@ const Portfolio = () => {
         <Swiper
           className={styles.Swiper}
           // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Zoom,Autoplay]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Zoom, Autoplay]}
           spaceBetween={100}
           slidesPerView={1}
           navigation
@@ -132,7 +134,7 @@ const Portfolio = () => {
             disableOnInteraction: false,
           }}
         >
-          {slideobj.map((item,idx) => {
+          {slideobj.map((item, idx) => {
             return (
               <SwiperSlide>
                 <div className={styles.PortfolioContainer}>
@@ -144,7 +146,10 @@ const Portfolio = () => {
                     </div>
                     <div className={styles.portfolioRightbox}>
                       <div className={styles.portfolioTitlebox}>
-                        <h2><span>0{idx+1}</span><span>{item.title}</span></h2>
+                        <h2>
+                          <span>0{idx + 1}</span>
+                          <span>{item.title}</span>
+                        </h2>
                       </div>
                       <div className={styles.portflioKeyword}>{item.keyword}</div>
                       <div className={styles.portfolioTextbox}>

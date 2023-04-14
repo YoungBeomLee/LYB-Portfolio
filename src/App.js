@@ -9,7 +9,6 @@ import Footer from './component/Footer';
 import Portfolio from './component/Portfolio';
 import Skills from './component/Skils';
 import ContactMe from './component/ContactMe';
-import Lottie from './component/Lottie';
 import History from './component/History';
 
 

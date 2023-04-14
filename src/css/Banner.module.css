@@ -37,7 +37,7 @@
 .bannerText h4 span {
   position: absolute;
   font-weight: 700;
-  transform: translate(-70%, 150%);
+  transform: translate(-60%, 150%);
   display: inline-block;
 }
 .typeCss,
