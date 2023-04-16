@@ -38,7 +38,7 @@ const Portfolio = () => {
       keyword: "#HTML #CSS #Jquery",
       imgUrl: project1,
       title: "한국가스공사",
-      content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
+      content: "한국가스공사 홈페이지 리뉴얼작업",
       date: "2022.12.16~2023.01.12 (3주)",
       contribution: "100%",
       skill: "HTML, CSS, JS, Jquery,api",
@@ -52,7 +52,7 @@ const Portfolio = () => {
       keyword: "#HTML #CSS #Jquery #PHP",
       imgUrl: project1,
       title: "한국가스공사 리뉴얼페이지",
-      content: "한국가스공사 홈페이지 리뉴얼작업입니다.",
+      content: "한국가스공사 홈페이지 PHP 게시판 기능추가 리뉴얼작업",
       date: "2022.12.16~2023.01.12 (3주)",
       contribution: "100%",
       skill: "HTML, CSS, JS, Jquery,php게시판, 캐시로그인, 캐로셀,php",
@@ -129,10 +129,10 @@ const Portfolio = () => {
           // onSlideChange={() => console.log("slide change")}
           loop
           zoom={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
         >
           {slideobj.map((item, idx) => {
             return (
@@ -151,7 +151,7 @@ const Portfolio = () => {
                           <span>{item.title}</span>
                         </h2>
                       </div>
-                      <div className={styles.portflioKeyword}>{item.keyword}</div>
+                      <div className={styles.portfolioKeyword}>{item.keyword}</div>
                       <div className={styles.portfolioTextbox}>
                         <ul className={styles.PortfolioTextul}>
                           <li>내용: {item.content}</li>

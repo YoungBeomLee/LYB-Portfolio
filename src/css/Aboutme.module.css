@@ -110,12 +110,20 @@
   outline: none;
   box-shadow: none;
 }
+.aboutImg {
+  width: 560px;
+  height: 720px;
+  text-align: center;
+  padding: 0 25px;
+  margin-left: -50px;
+  position: relative;
+  
+}
 .aboutImg img {
   margin-left: -50px;
-  vertical-align: middle;
   position: absolute;
-  left: 70%;
   opacity: 0;
+  
 }
 
 /* keyframes */
