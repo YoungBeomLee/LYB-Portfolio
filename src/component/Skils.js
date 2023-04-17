@@ -75,9 +75,9 @@ const Skills = () => {
 
   return (
     <>
-      <div className={styles.SkilsContainer}>
+      <div className={styles.SkilsContainer} id="Skils">
         <div className={styles.Textbox}>
-          <h2>SKills</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1500" >SKills</h2>
           <p></p>
           <span></span>
         </div>

@@ -3,14 +3,16 @@ import styles from "../css/ContactMe.module.css";
 import { AiOutlineEdit, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactMe = () => {
   return (
     <>
-      <div className={styles.ContactMeContainer}>
+      <div className={styles.ContactMeContainer} id="ContactMe" >
         <div className={styles.Inner}>
           <div className={styles.ContactInfoWrap}>
-            <h4 className={styles.ContactInfo}>Contact Info</h4>
+            <h4 className={styles.ContactInfo} data-aos="fade-up" data-aos-duration="1500">Contact Info</h4>
 
             <ul className={styles.nav}>
               <li>

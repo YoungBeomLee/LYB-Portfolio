@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import { AiFillSetting } from "react-icons/ai";
+import profile from "../img/profile3.png";
 
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -60,18 +61,9 @@ const Banner = () => {
                     <FaGithub className={styles.faGithub} />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <FaGithub className={styles.faGithub} />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <FaGithub className={styles.faGithub} />
-                  </a>
-                </li>
               </ul>
             </div>
+            <div className={styles.ImageBox}><img src={profile}/></div> 
           </div>
         </div>
       </BannerContainer>

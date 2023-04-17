@@ -1,18 +1,22 @@
-import React from "react";
+import {useEffect} from "react";
 import Container from "../UI/Container";
 import styles from "../css/History.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const History = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
-    <div className={styles.ServiceContainer}>
+    <div className={styles.HistoryContainer} id="History">
       <Container>
         <div className={styles.TextBox}>
-          <h2>History</h2>
-          <p>What I'm Doing</p>
+          <h2 data-aos="fade-up" data-aos-duration="1500" >History</h2>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">What I'm Doing</p>
           <span></span>
         </div>
         <div className={styles.CardBox}>
-          <div className={styles.Card}>
+          <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
             <h2>인적사항</h2>
             <ul className={styles.CardUl}>
               <li><span>이름:</span><span>이영범</span></li>
@@ -20,7 +24,7 @@ const History = () => {
               <li><span>학력:</span><span>2014.03~2021.08 멀티미디어공학과졸업</span></li>
             </ul>
           </div>
-          <div className={styles.Card}>
+          <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
             <h2>교육사항</h2>
             <ul className={styles.CardUl}>
               <li>
@@ -31,7 +35,7 @@ const History = () => {
               <li></li>
             </ul>
           </div>
-          <div className={styles.Card}>
+          <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
             <h2>자격사항</h2>
             <ul className={styles.CardUl}>
               <li><span>정보처리기사:</span> <span>2021.06</span></li>

@@ -14,6 +14,8 @@ import fourniture from "../img/4niture.png";
 import ticatalk from "../img/ticatalk.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,7 +39,7 @@ const Portfolio = () => {
     {
       keyword: "#HTML #CSS #Jquery",
       imgUrl: project1,
-      title: "한국가스공사",
+      title: "한국가스공사 리뉴얼페이지",
       content: "한국가스공사 홈페이지 리뉴얼작업",
       date: "2022.12.16~2023.01.12 (3주)",
       contribution: "100%",
@@ -51,7 +53,7 @@ const Portfolio = () => {
     {
       keyword: "#HTML #CSS #Jquery #PHP",
       imgUrl: project1,
-      title: "한국가스공사 리뉴얼페이지",
+      title: "한국가스공사 리뉴얼페이지(php)",
       content: "한국가스공사 홈페이지 PHP 게시판 기능추가 리뉴얼작업",
       date: "2022.12.16~2023.01.12 (3주)",
       contribution: "100%",
@@ -109,10 +111,10 @@ const Portfolio = () => {
   ];
   return (
     <>
-      <div className={styles.Container}>
+      <div className={styles.Container} id="Portfolio">
         <div className={styles.portflioTitle}>
-          <h2>Portfolio</h2>
-          <p>저의 포트폴리오 작업물입니다.</p>
+          <h2 data-aos="fade-up" data-aos-duration="1500">Portfolio</h2>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">저의 포트폴리오 작업물입니다.</p>
           <span></span>
         </div>
         <Swiper
@@ -139,12 +141,12 @@ const Portfolio = () => {
               <SwiperSlide>
                 <div className={styles.PortfolioContainer}>
                   <div className={styles.PortfolioInner}>
-                    <div className={styles.portfolioLeftbox}>
+                    <div className={styles.portfolioLeftbox} data-aos="fade-right" data-aos-duration="1500">
                       <div className={styles.portfolioImgbox}>
                         <img src={item.imgUrl} alt={item.imgUrl} />
                       </div>
                     </div>
-                    <div className={styles.portfolioRightbox}>
+                    <div className={styles.portfolioRightbox} data-aos="fade-left" data-aos-duration="1500">
                       <div className={styles.portfolioTitlebox}>
                         <h2>
                           <span>0{idx + 1}</span>

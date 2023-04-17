@@ -31,7 +31,7 @@
   letter-spacing: 0;
   padding: 10px 0 30px;
   color: #040c2c;
-  font-family: "pretendard",sans-serif;
+  font-family: "pretendard", sans-serif;
 }
 
 .bannerText h4 span {
@@ -68,7 +68,7 @@
   text-shadow: none;
   margin-bottom: 20px;
   animation-name: fadeInUp;
-  animation-duration: 1000ms;
+  animation-duration: 2000ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
@@ -86,7 +86,7 @@
   text-transform: none;
   letter-spacing: 0px;
   animation-name: fadeInUp;
-  animation-duration: 1500ms;
+  animation-duration: 2500ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
@@ -144,7 +144,18 @@
 .setting {
   animation: spins 1.5s linear infinite;
 }
-
+.ImageBox {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 1400px;
+}
+.ImageBox img {
+  position: relative;
+  left: -50px;
+  height: 100%;
+}
 /* keyframes */
 @keyframes fadeInUp {
   0% {

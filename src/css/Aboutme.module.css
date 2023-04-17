@@ -113,17 +113,8 @@
 .aboutImg {
   width: 560px;
   height: 720px;
-  text-align: center;
   padding: 0 25px;
   margin-left: -50px;
-  position: relative;
-  
-}
-.aboutImg img {
-  margin-left: -50px;
-  position: absolute;
-  opacity: 0;
-  
 }
 
 /* keyframes */
