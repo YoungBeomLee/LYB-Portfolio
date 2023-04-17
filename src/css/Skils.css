@@ -4,8 +4,8 @@
     
 }
 .skillbar-percent{
-    position: absolute;
-    color:#040c2c; 
-    left: 100%;
-    font-size: 16px;
+    position: absolute !important;
+    color:#040c2c !important; 
+    left: 100% !important;
+    font-size: 16px !important;
 }
