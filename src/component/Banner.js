@@ -58,7 +58,7 @@ const Banner = () => {
                 </li>
                 <li>
                   <a href="#">
-                    <FaGithub className={styles.faGithub} />
+                    <span>이력서</span>
                   </a>
                 </li>
               </ul>

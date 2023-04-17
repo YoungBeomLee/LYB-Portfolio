@@ -104,20 +104,36 @@
 .iconList li {
   margin: 0 3px;
   box-sizing: border-box;
+  opacity: 1;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #040c2c;
+  padding: 10px 36px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  min-width: 140px;
+  text-align: center;
+  display: inline-block;
+}
+.iconList li:hover {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  background-color: #040c2c;
 }
 .iconList li a {
-  background: #040c2c;
-  font-size: 14px;
-  width: 42px;
-  height: 42px;
+  font-size: 16px;
   line-height: 40px;
-  border-radius: 50%;
   display: inline-block;
   transition: all 0.3s linear;
   text-align: center;
-  color: #fff;
+  color: #040c2c;
 }
-.iconList li a:hover {
+.iconList li:hover a {
   color: #fff;
   box-shadow: 0 2px 35px 0 rgba(4, 12, 44, 0.5);
   transform: translateY(-4px);
@@ -131,6 +147,7 @@
 .faGithub {
   width: 25px;
   height: 25px;
+  text-align: left;
 }
 
 .circleOne {

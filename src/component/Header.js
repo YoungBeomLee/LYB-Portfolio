@@ -43,7 +43,7 @@ const Header = () => {
           <div className={styles.gnbMenu}>
             <ul className={styles.menu}>
               <li>
-                <Link to="/">Home</Link>
+                <a href="#">Home</a>
               </li>
               <li>
                 <a href="#Aboutme">About me</a>
