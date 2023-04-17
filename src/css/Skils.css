@@ -6,6 +6,6 @@
 .skillbar-percent{
     position: absolute;
     color:#040c2c; 
-    left: 110%;
+    left: 100%;
     font-size: 16px;
 }
