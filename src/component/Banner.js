@@ -34,34 +34,37 @@ const Banner = () => {
           <div className={styles.circleOne}>
             <img src={circle} alt="" />
           </div>
-          <div class={styles.innerWrap}>
-            <div className={styles.bannerText}>
-              <div className={styles.bannerName}>
-                <h2>
-                  <span>YoungBeomLee's Portfolio</span>
-                </h2>
+          <div className={styles.innerWrap}>
+            <div className={styles.BannerLeftbox}>
+              <div className={styles.bannerText}>
+                <div className={styles.bannerName}>
+                  <h2>
+                    <span>YoungBeom's</span><br/>
+                    <span>Portfolio</span>
+                  </h2>
+                </div>
+                <p className={styles.bannerDesc}>
+                  <span>신입 프론트엔드개발자 이영범입니다.</span>
+                </p>
+                <h4>
+                  "영범포트" &nbsp;
+                  <span className={styles.typeCss} ref={firstRef}></span>
+                  <span className={styles.typeCss2} ref={secondRef}></span>
+                  <AiFillSetting className={styles.setting}></AiFillSetting>
+                </h4>
+                <ul className={styles.iconList}>
+                  <li>
+                    <a href="https://github.com/YoungBeomLee">
+                      <FaGithub className={styles.faGithub} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>이력서</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <p className={styles.bannerDesc}>
-                <span>신입 프론트엔드개발자 이영범입니다.</span>
-              </p>
-              <h4>
-                "영범포트" &nbsp;
-                <span className={styles.typeCss} ref={firstRef}></span>
-                <span className={styles.typeCss2} ref={secondRef}></span>
-                <AiFillSetting className={styles.setting}></AiFillSetting>
-              </h4>
-              <ul className={styles.iconList}>
-                <li>
-                  <a href="https://github.com/YoungBeomLee">
-                    <FaGithub className={styles.faGithub} />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span>이력서</span>
-                  </a>
-                </li>
-              </ul>
             </div>
             <div className={styles.ImageBox}><img src={profile}/></div> 
           </div>

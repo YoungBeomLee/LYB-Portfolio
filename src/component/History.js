@@ -38,8 +38,8 @@ const History = () => {
           <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
             <h2>자격사항</h2>
             <ul className={styles.CardUl}>
-              <li><span>정보처리기사:</span> <span>2021.06</span></li>
-              <li><span>GTQ1급 포토샵:</span><span>2021.12</span></li>
+              <li><span>정보처리기사</span></li>
+              <li><span>GTQ1급</span></li>
               <li></li>
             </ul>
           </div>
