@@ -13,7 +13,7 @@ const ContactMe = () => {
         <div className={styles.Inner}>
           <div className={styles.ContactInfoWrap}>
             <h4 className={styles.ContactInfo} data-aos="fade-up" data-aos-duration="1500">Contact Info</h4>
-
+          
             <ul className={styles.nav}>
               <li>
                 <AiOutlineEdit></AiOutlineEdit>
