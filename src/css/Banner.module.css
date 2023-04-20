@@ -11,14 +11,14 @@
 }
 .innerWrap {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
-  display: table;
   height: 100%;
 }
 .BannerLeftbox {
   position: relative;
-  left: 10%;
+  width: 50%;
+  display: table;
 }
 .bannerText {
   max-width: 1140px;

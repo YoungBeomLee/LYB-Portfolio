@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import Container from "../UI/Container";
 import styles from "../css/header.module.css";
 import lottieAni2 from "../cube2.json";
 import lottie from "lottie-web";
@@ -31,7 +30,7 @@ const Header = () => {
 
   return (
     <header>
-      <Container>
+      <div className={styles.headerInner}>
         <div className={styles.gnbWrap}>
           <div className={styles.logoWrap}>
             <Link to="/">
@@ -63,7 +62,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </Container>
+      </div>
     </header>
   );
 };

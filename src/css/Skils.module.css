@@ -1,37 +1,35 @@
-.SkilsContainer{
-    padding: 120px 0;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-   
+.SkilsContainer {
+  padding: 120px 0;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
-.Textbox{
-    text-align: center;
-    margin-bottom:60px;
+.Textbox {
+  text-align: center;
+  margin-bottom: 60px;
 }
-.Textbox h2{
-    color: #040c2c;
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 700;
-    white-space: pre-line;
+.Textbox h2 {
+  color: #040c2c;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  white-space: pre-line;
 }
-.Textbox span{
-    width: 80px;
-    height: 2px;
-    margin: 25px auto 0;
-    display: inline-block;
-    background: #bcbcbc;
-    text-align: center!important;
+.Textbox span {
+  width: 80px;
+  height: 2px;
+  margin: 25px auto 0;
+  display: inline-block;
+  background: #bcbcbc;
+  text-align: center !important;
 }
-.barContainer{
-    display: flex;
-    justify-content: space-between;
-    
+.barContainer {
+  display: flex;
+  justify-content: space-between;
 }
-.leftBox{
-    width: 40%;
+.leftBox {
+  width: 40%;
 }
-.rightBox{
-    width: 40%;
+.rightBox {
+  width: 40%;
 }
