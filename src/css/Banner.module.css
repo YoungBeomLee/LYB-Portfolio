@@ -6,48 +6,54 @@
   z-index: 1;
   text-align: center;
   display: flex;
-  align-items: center;
-  overflow: hidden;
+  align-items: flex-end;
 }
 .innerWrap {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   height: 100%;
+  overflow: hidden;
+  display: flex;
 }
 .BannerLeftbox {
-  position: relative;
   width: 50%;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 0 0 50%;
+  align-items: center;
+  
 }
 .bannerText {
-  max-width: 1140px;
-  margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
-  vertical-align: middle;
-  display: table-cell;
-  text-align: center;
-  min-height: 100vh;
+  text-align: left;
 }
 .bannerText h4 {
   font-size: 25px;
-  letter-spacing: 0;
-  padding: 10px 0 30px;
   color: #040c2c;
   font-family: "pretendard", sans-serif;
 }
 
-.bannerText h4 span {
+.bannerText h4.aniBox {
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  height: 30px;
+}
+
+.bannerText h4.anibox span {
   position: absolute;
-  font-weight: 700;
-  transform: translate(-60%, 150%);
   display: inline-block;
 }
 .typeCss,
 .typeCss2 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .typeCss::after,
 .typeCss2::after {
@@ -98,15 +104,17 @@
 }
 .iconList {
   margin: 0 auto;
-  width: 30%;
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
   list-style: none;
   padding: 0;
 }
+.iconList li:first-child {
+  margin-left: 0;
+}
 .iconList li {
-  margin: 0 3px;
+  margin: 0 20px;
   box-sizing: border-box;
   opacity: 1;
   margin-left: 15px;
@@ -168,15 +176,12 @@
 }
 
 .ImageBox {
-  width: 600px;
-  height: 700px;
-  position: absolute;
-  bottom: 0;
-  left: 60%;
+  width: 50%;
+  height: 100%;
 }
 .ImageBox img {
   position: relative;
-  left: -50px;
+  right: 0px;
   height: 100%;
   width: 100%;
 }
