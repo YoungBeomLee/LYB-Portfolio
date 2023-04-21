@@ -15,6 +15,12 @@
   width: 50%;
   height: 100%;
 }
+.portfolioRightbox {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  
+}
 .portfolioTextbox {
   border-radius: 25px;
   width: 100%;
@@ -27,12 +33,7 @@
   display: flex;
   border-radius: 25px;
 }
-.portfolioRightbox {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  top: -50px;
-}
+
 .portfolioTitlebox {
   width: 100%;
   height: 200px;
@@ -60,10 +61,13 @@
   margin-right: 20px;
   margin-left: 20px;
 }
+
 .PortfolioTextul {
   display: block;
-  margin: 5% 10%;
+  margin: 0 10%;
+ 
 }
+
 .PortfolioTextul li {
   line-height: 50px;
   font-size: 20px;
@@ -128,7 +132,7 @@
   text-align: center;
   display: inline-block;
   position: relative;
-  top: 40px;
+  top: 50px;
 }
 .LinkBtn:hover {
   color: #fff;
@@ -153,7 +157,7 @@
   padding: 5px 0px;
   border-radius: 3px;
   position: relative;
-  top: -25px;
+  top: -15px;
   left: 150px;
   z-index: 1;
   cursor: pointer;

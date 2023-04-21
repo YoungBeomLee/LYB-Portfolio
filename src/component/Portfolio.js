@@ -165,12 +165,12 @@ const Portfolio = () => {
                           <li>페이지: {item.page}</li>
                           <li>
                             <a href={item.link} ref={a1Ref} className={styles.LinkBtn}>
-                              바로가기
+                              사이트보기
                             </a>
                           </li>
                           <li>
                             <a href={item.link2} ref={a2Ref} className={styles.LinkBtn2}>
-                              Github
+                              깃허브보기
                             </a>
                           </li>
                         </ul>

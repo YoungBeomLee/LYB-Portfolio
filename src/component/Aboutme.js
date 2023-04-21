@@ -46,7 +46,20 @@ const Aboutme = () => {
       animation: gsap.to(ImageRef.current, { opacity: 1, x: -200, duration: 2, ease: "power2.inOut" }), // ScrollTrigger와 연결할 애니메이션 설정
     });*/
   }, []);
-
+ let alink=[
+  {
+    name:"연락처",
+    url:"https://drive.google.com/file/d/1ikyrdEcwe-IGe5tlQ1G3u-ZM0nrt3aaH/view?usp=sharing",
+    class:styles.ContactBtn,
+    reff:a1Ref,
+  },
+  {
+    name:"이력서",
+    url:"https://drive.google.com/file/d/171vndEIrtLoETfasdiKlhK-r1twiP7HR/view?,usp=sharing",
+    class:styles.downBtn,
+    reff:a2Ref,
+  }
+ ]
   return (
     <>
       <div className={styles.aboutContainer} id="Aboutme">
@@ -63,12 +76,15 @@ const Aboutme = () => {
                   저는 프론트엔드 개발자로서 다양한 웹 기술을 다룰 수 있는 능력을 가지고 있습니다. HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, Node.js,api등을 활용하여  웹 프로젝트를 개발해왔습니다. 또한, 반응형 웹 디자인에도 높은 이해와 경험이 있어 모바일과 데스크탑에서 최적의 사용자 경험을
                   제공할 수 있습니다. 협업을 중요시하며, 뛰어난 커뮤니케이션 능력과 문제 해결 능력을 갖추고 있습니다. 웹 개발의 최신 트렌드를 지속적으로 공부하며, 사용자 친화적인 인터페이스와 효율적인 웹 애플리케이션을 개발하는 것에 끊임없이 열정을 쏟고 있습니다.
                 </p>
-                <a href="#" ref={a1Ref} className={styles.ContactBtn}>
-                  연락처
+                {alink.map((item) => {
+                return(
+                <>
+                <a href={item.url} ref={item.reff} className={item.class}>
+                  {item.name}
                 </a>
-                <a href="#" ref={a2Ref} className={styles.downBtn}>
-                  이력서
-                </a>
+                </>
+                );
+              })}
               </div>
             </div>
             <div className={styles.rightBox}>
