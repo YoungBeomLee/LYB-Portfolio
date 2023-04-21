@@ -19,6 +19,7 @@
   width: 50%;
   height: 100%;
   position: relative;
+  top:-100px;
   
 }
 .portfolioTextbox {
