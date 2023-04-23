@@ -71,7 +71,7 @@ const Portfolio = () => {
       title: "tikcatalk",
       content: "팀프로젝트1. 티켓톡",
       date: "2023.2.6~2023.02.22 (2주)",
-      contribution: "60%",
+      contribution: "25%, 팀원:5명",
       skill: "HTML, CSS, JS, Jquery, bootstrap, Scss,캐시로그인, 부트스트랩, api",
       tech: "vscode,github,Figma",
       deploy: "GitHub",
@@ -86,7 +86,7 @@ const Portfolio = () => {
       title: "4niture",
       content: "팀프로젝트2. 가구쇼핑몰",
       date: "2023.03.15~2023.04.04 (3주)",
-      contribution: "70%",
+      contribution: "25% 팀원:4명",
       skill: "React, CSSmodule, antd, node.js,리액트, sequlize, 서버구현, sqllite",
       tech: "vscode,github,Figma",
       deploy: "Vercell, CloudType",
@@ -100,11 +100,11 @@ const Portfolio = () => {
       title: "react-native-4niture",
       content: "개인프로젝트 리액트네이티브. 가구쇼핑몰",
       date: "2023.03.15~2023.04.12 (3주)",
-      contribution: "70%",
-      skill: "React, CSSmodule, antd, node.js,리액트, sequlize, 서버구현, sqllite",
+      contribution: "100%",
+      skill: "React-native-expo,carousel,Update 기능,axios,구매 후 품절 기능",
       tech: "vscode,github,Figma",
       deploy: "Vercell, CloudType",
-      page: "메인1, 상세상품게시판4, 검색페이지1, 상품업로드1, 리뷰업로드1, 리뷰페이지1",
+      page: "메인페이지,상품페이지,리뷰페이지",
       link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
       link2: "https://github.com/YoungBeomLee/react-native-project",
     },
@@ -113,8 +113,12 @@ const Portfolio = () => {
     <>
       <div className={styles.Container} id="Portfolio">
         <div className={styles.portflioTitle}>
-          <h2 data-aos="fade-up" data-aos-duration="1500">Portfolio</h2>
-          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">저의 포트폴리오 작업물입니다.</p>
+          <h2 data-aos="fade-up" data-aos-duration="1500">
+            Portfolio
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            저의 포트폴리오 작업물입니다.
+          </p>
           <span></span>
         </div>
         <Swiper
@@ -163,18 +167,20 @@ const Portfolio = () => {
                           <li>사용프로그램: {item.tech}</li>
                           <li>배포: {item.deploy}</li>
                           <li>페이지: {item.page}</li>
-                          <li>
-                            <a href={item.link} ref={a1Ref} className={styles.LinkBtn}>
-                              사이트보기
-                            </a>
-                          </li>
-                          <li>
-                            <a href={item.link2} ref={a2Ref} className={styles.LinkBtn2}>
-                              깃허브보기
-                            </a>
-                          </li>
                         </ul>
                       </div>
+                      <ul className={styles.linkul}>
+                        <li>
+                          <a href={item.link} ref={a1Ref} className={styles.LinkBtn}>
+                            사이트보기
+                          </a>
+                        </li>
+                        <li>
+                          <a href={item.link2} ref={a2Ref} className={styles.LinkBtn2}>
+                            깃허브보기
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
