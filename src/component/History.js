@@ -31,32 +31,37 @@ const History = () => {
               <span>1995.12.07 | 만27세</span>
             </li>
             <li>
-              <span>학력:</span>
-              <span>2014.03~2021.08 멀티미디어공학과졸업</span>
+              <span>연락처:</span>
+              <span>010-5561-7692</span>
+            </li>
+            <li>
+              <span>이메일:</span>
+              <span>krkr127127@naver.com</span>
             </li>
           </ul>
         </div>
         <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
           <h2>교육사항</h2>
           <ul className={styles.CardUl}>
+            <li>멀티미디어공학과졸업 <br/>2014.03~2021.08</li>
             <li>
               웹퍼블리셔과정: <br />
-              2021.09~2022.02 그린컴퓨터아카데미
+              2021.09~2022.02 
             </li>
             <li>프로젝트기반 프론트엔드 SW개발자과정: 2022.11~2023.05</li>
-            <li></li>
           </ul>
         </div>
         <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">
           <h2>자격사항</h2>
           <ul className={styles.CardUl}>
             <li>
-              <span>정보처리기사</span>
+              <span style={{ fontSize: 20 }}>
+                <b>정보처리기사</b>
+              </span>
             </li>
             <li>
-              <span>GTQ1급</span>
+              <span style={{ fontSize: 20 }}>GTQ1급</span>
             </li>
-            <li></li>
           </ul>
         </div>
       </div>

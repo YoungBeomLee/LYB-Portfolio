@@ -12,6 +12,7 @@ import "swiper/css/autoplay";
 import project1 from "../img/project1Full.png";
 import fourniture from "../img/4niture.png";
 import ticatalk from "../img/ticatalk.png";
+import qrcode from "../img/4nitureqr.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import AOS from "aos";
@@ -105,6 +106,7 @@ const Portfolio = () => {
       tech: "vscode,github,Figma",
       deploy: "Vercell, CloudType",
       page: "메인페이지,상품페이지,리뷰페이지",
+      qr:qrcode,
       link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
       link2: "https://github.com/YoungBeomLee/react-native-project",
     },
@@ -167,8 +169,10 @@ const Portfolio = () => {
                           <li>사용프로그램: {item.tech}</li>
                           <li>배포: {item.deploy}</li>
                           <li>페이지: {item.page}</li>
+                          <li><img className={styles.qrcode} src={item.qr} alt=""/></li>
                         </ul>
                       </div>
+                      
                       <ul className={styles.linkul}>
                         <li>
                           <a href={item.link} ref={a1Ref} className={styles.LinkBtn}>

@@ -181,6 +181,13 @@
   outline: none;
   box-shadow: none;
 }
+.qrcode{
+  position: absolute;
+  left: 500px;
+  width: 100px;
+  height: 100px;
+  
+}
 
 @keyframes downslide {
   0% {

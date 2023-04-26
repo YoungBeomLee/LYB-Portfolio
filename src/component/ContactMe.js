@@ -21,7 +21,7 @@ const ContactMe = () => {
               </li>
               <li>
                 <HiLocationMarker></HiLocationMarker>
-                <p><span>주소:</span> <span>경기도 성남시</span></p>
+                <p><span>주소:</span> <span>경기도 성남시 분당구</span></p>
               </li>
               <li>
                 <AiOutlinePhone></AiOutlinePhone>
