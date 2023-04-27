@@ -15,7 +15,6 @@ import ticatalk from "../img/ticatalk.png";
 import qrcode from "../img/4nitureqr.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -144,7 +143,7 @@ const Portfolio = () => {
         >
           {slideobj.map((item, idx) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide className={styles.SwiperSlide}>
                 <div className={styles.PortfolioContainer}>
                   <div className={styles.PortfolioInner}>
                     <div className={styles.portfolioLeftbox} data-aos="fade-right" data-aos-duration="1500">
@@ -169,7 +168,7 @@ const Portfolio = () => {
                           <li>사용프로그램: {item.tech}</li>
                           <li>배포: {item.deploy}</li>
                           <li>페이지: {item.page}</li>
-                          <li><img className={styles.qrcode} src={item.qr} alt=""/></li>
+                          <li><img className={styles.qrcode} src={item.qr} alt=""/><span>⬅qr코드 스캔</span></li>
                         </ul>
                       </div>
                       

@@ -3,7 +3,6 @@ import styles from "../css/ContactMe.module.css";
 import { AiOutlineEdit, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ContactMe = () => {

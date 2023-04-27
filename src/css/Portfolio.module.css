@@ -181,12 +181,32 @@
   outline: none;
   box-shadow: none;
 }
-.qrcode{
-  position: absolute;
-  left: 500px;
+.qrcode {
   width: 100px;
   height: 100px;
+}
+.PortfolioTextul li:last-child {
+  position: relative;
+  left: 200px;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   
+}
+.PortfolioTextul li:last-child span{
+  font-size: 24px;
+  font-weight: 700;
+    
+}
+.SwiperSlide:first-child .PortfolioTextul li:last-child,
+.SwiperSlide:nth-child(2) .PortfolioTextul li:last-child,
+.SwiperSlide:nth-child(3) .PortfolioTextul li:last-child,
+.SwiperSlide:nth-child(4) .PortfolioTextul li:last-child {
+  display: none;
+}
+.SwiperSlide:last-child .LinkBtn {
+  display: none;
 }
 
 @keyframes downslide {
