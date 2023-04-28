@@ -187,8 +187,8 @@
 }
 .PortfolioTextul li:last-child {
   position: relative;
-  left: 200px;
-  top: 350px;
+  left: 150px;
+  top: 70px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
