@@ -140,3 +140,9 @@
     transform: translateX(0);
   }
 }
+
+/*----------resonsive---------------*/
+
+@media screen and (max-width:1440px) {
+ 
+}

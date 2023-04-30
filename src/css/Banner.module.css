@@ -20,12 +20,11 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  align-content:flex-start;
+  align-content: flex-start;
   justify-content: space-around;
   flex-direction: row;
   flex: 0 0 50%;
   align-items: center;
-  
 }
 .bannerText {
   font-size: 14px;
@@ -166,10 +165,15 @@
 .circleOne {
   position: absolute;
   top: 0;
+  width: 300px !important;
+  height: 300px;
   left: -150px;
   opacity: 0.6;
-  animation: spins 1.5s linear infinite;
   z-index: 10;
+}
+.circleOne img {
+  
+  animation: spins 1.5s linear infinite;
 }
 .setting {
   animation: spins 1.5s linear infinite;
@@ -216,5 +220,25 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/*----------resonsive---------------*/
+
+@media screen and (max-width: 1440px) {
+  .BannerLeftbox {
+   padding-left: 5rem;
+  }
+  .bannerText{
+    padding-left: 5rem;
+  }
+  .circleOne {
+   padding-right: 10rem;
+  }
+  .ImageBox{
+    width: 100%;
+  }
+  .innerWrap {
+    max-width: 1000px;
   }
 }

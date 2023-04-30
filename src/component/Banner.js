@@ -1,8 +1,7 @@
-import { useLayoutEffect, useRef, useEffect, useState } from "react";
+import {  useRef, useEffect, useState } from "react";
 import BannerContainer from "../UI/BannerContainer";
 import styles from "../css/Banner.module.css";
 import circle from "../img/circle.png";
-import { FaGithub } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
@@ -15,7 +14,7 @@ const Banner = () => {
   const secondRef = useRef(null);
   const thirdRef = useRef(null);
   const fourthRef = useRef(null);
-  const [typeItem, setTypeItem] = useState(() => {});
+  //const [typeItem, setTypeItem] = useState(() => {});
 
   useEffect(() => {
     const first = firstRef.current;
@@ -72,7 +71,7 @@ const Banner = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://drive.google.com/file/d/1CVx75IDMkljgQCZHkMNN4cxxqSTQ-1ZQ/view?usp=share_link">
+                    <a href="https://drive.google.com/file/d/1oNJDcdATshZ8dP2sdzSDkGnJJmvoV_jG/view?usp=sharing">
                       <span>이력서</span>
                     </a>
                   </li>

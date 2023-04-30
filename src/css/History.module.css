@@ -81,3 +81,9 @@
   display: flex;
   justify-content: first baseline;
 }
+
+/*----------resonsive---------------*/
+
+@media screen and (max-width:1440px) {
+  
+}

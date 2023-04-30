@@ -33,3 +33,9 @@
 .rightBox {
   width: 40%;
 }
+
+/*----------resonsive---------------*/
+
+@media screen and (max-width:1440px) {
+ 
+}
