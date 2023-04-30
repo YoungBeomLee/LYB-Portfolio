@@ -13,6 +13,7 @@ import project1 from "../img/project1Full.png";
 import fourniture from "../img/4niture.png";
 import ticatalk from "../img/ticatalk.png";
 import qrcode from "../img/4nitureqr.png";
+import reactNative from "../img/reactNative.gif";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import "aos/dist/aos.css";
@@ -62,7 +63,7 @@ const Portfolio = () => {
       deploy: "GitHub, Dothome",
       page: "메인1, 게시판1, 로그인1",
       link: "http://edlee127.dothome.co.kr/project1/index.php",
-      link2: "https://youngbeomlee.github.io/project1/",
+      link2: "https://github.com/YoungBeomLee/Project1-PHP",
     },
     {
       keyword: "#BootStrap #SCSS #API",
@@ -93,10 +94,13 @@ const Portfolio = () => {
       page: "메인1, 상세상품게시판4, 검색페이지1, 상품업로드1, 리뷰업로드1, 리뷰페이지1",
       link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
       link2: "https://github.com/YoungBeomLee/4niture-react-front",
-    },
+    }
+  ];
+
+  let slideobj2 = [
     {
       keyword: "#React-Native #Android Studio",
-      imgUrl: fourniture,
+      imgUrl: reactNative,
       title: "react-native-4niture",
       content: "개인프로젝트 리액트네이티브. 가구쇼핑몰",
       date: "2023.03.15~2023.04.12 (3주)",
@@ -105,7 +109,7 @@ const Portfolio = () => {
       tech: "vscode,github,Figma",
       deploy: "Vercell, CloudType",
       page: "메인페이지,상품페이지,리뷰페이지",
-      qr:qrcode,
+      qr: qrcode,
       link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
       link2: "https://github.com/YoungBeomLee/react-native-project",
     },
@@ -168,11 +172,10 @@ const Portfolio = () => {
                           <li>사용프로그램: {item.tech}</li>
                           <li>배포: {item.deploy}</li>
                           <li>페이지: {item.page}</li>
-                          <li><img className={styles.qrcode} src={item.qr} alt=""/><span>⬅qr코드 스캔</span></li>
                         </ul>
                       </div>
-                      
-                      <ul className={styles.linkul}>
+
+                      <ul className={styles.linkUl}>
                         <li>
                           <a href={item.link} ref={a1Ref} className={styles.LinkBtn}>
                             사이트보기
@@ -180,6 +183,52 @@ const Portfolio = () => {
                         </li>
                         <li>
                           <a href={item.link2} ref={a2Ref} className={styles.LinkBtn2}>
+                            깃허브보기
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+          {slideobj2.map((item, idx) => {
+            return (
+              <SwiperSlide className={styles.SwiperSlide}>
+                <div className={styles.PortfolioContainer}>
+                  <div className={styles.PortfolioInner}>
+                    <div className={styles.portfolioLeftbox} data-aos="fade-right" data-aos-duration="1500">
+                      <div className={[styles.portfolioImgbox, styles.Frame].join(" ")}>
+                        <img src={item.imgUrl} alt={item.imgUrl} className={styles.imgGif} />
+                      </div>
+                    </div>
+                    <div className={styles.portfolioRightbox} data-aos="fade-left" data-aos-duration="1500">
+                      <div className={styles.portfolioTitlebox}>
+                        <h2>
+                          <span>0{idx + 5}</span>
+                          <span>{item.title}</span>
+                        </h2>
+                      </div>
+                      <div className={styles.portfolioKeyword}>{item.keyword}</div>
+                      <div className={styles.portfolioTextbox}>
+                        <ul className={styles.PortfolioTextul}>
+                          <li>내용: {item.content}</li>
+                          <li>기간: {item.date}</li>
+                          <li>기여도: {item.contribution}</li>
+                          <li>스킬: {item.skill}</li>
+                          <li>사용프로그램: {item.tech}</li>
+                          <li>배포: {item.deploy}</li>
+                          <li>페이지: {item.page}</li>
+                        </ul>
+                      </div>
+                      <ul className={styles.linkUl}>
+                        <li style={{display:"flex",flexDirection:"column"}}>
+                          <img className={styles.qrCodeImg} src={item.qr} alt="" />
+                          <span>qr코드 스캔</span>
+                        </li>
+                        <li style={{marginLeft:50}}>
+                          <a href={item.link2} ref={a2Ref} className={[styles.LinkBtn2, styles.LinkBtn22].join(" ")}>
                             깃허브보기
                           </a>
                         </li>
