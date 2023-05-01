@@ -85,5 +85,12 @@
 /*----------resonsive---------------*/
 
 @media screen and (max-width:1440px) {
-  
+  .CardBox {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left:15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
 }

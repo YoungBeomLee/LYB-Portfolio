@@ -46,20 +46,20 @@ const Aboutme = () => {
       animation: gsap.to(ImageRef.current, { opacity: 1, x: -200, duration: 2, ease: "power2.inOut" }), // ScrollTrigger와 연결할 애니메이션 설정
     });*/
   }, []);
- let alink=[
-  {
-    name:"연락처",
-    url:"https://drive.google.com/file/d/1ikyrdEcwe-IGe5tlQ1G3u-ZM0nrt3aaH/view?usp=sharing",
-    class:styles.ContactBtn,
-    reff:a1Ref,
-  },
-  {
-    name:"이력서",
-    url:"https://drive.google.com/file/d/1CVx75IDMkljgQCZHkMNN4cxxqSTQ-1ZQ/view?usp=share_link",
-    class:styles.downBtn,
-    reff:a2Ref,
-  }
- ]
+  let alink = [
+    {
+      name: "연락처",
+      url: "https://drive.google.com/file/d/1ikyrdEcwe-IGe5tlQ1G3u-ZM0nrt3aaH/view?usp=sharing",
+      class: styles.ContactBtn,
+      reff: a1Ref,
+    },
+    {
+      name: "이력서",
+      url: "https://drive.google.com/file/d/1CVx75IDMkljgQCZHkMNN4cxxqSTQ-1ZQ/view?usp=share_link",
+      class: styles.downBtn,
+      reff: a2Ref,
+    },
+  ];
   return (
     <>
       <div className={styles.aboutContainer} id="Aboutme">
@@ -72,17 +72,20 @@ const Aboutme = () => {
                   비쥬얼 디자이너 & 프론트엔드 개발자 <b style={{ color: "#000", fontWeight: 700, fontSize: 20 }}>이영범</b>입니다.
                 </h6>
                 <p ref={pRef}>
-                  -저는 Figma, Git, VSCode, React를 이용하여 반응형 웹 디자인에 중점을 두고 사용자 경험을 개선하는 프론트엔드 개발자입니다. HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, Node.js, API 등의 기술을 활용하여 웹 프로젝트를 개발해왔고, 협업과 커뮤니케이션, 문제 해결 능력에 뛰어나며 최신 웹 개발 트렌드를 학습하며 열정을 쏟고 있습니다.
+                  -저는 Figma, Git, VSCode, React를 이용하여 반응형 웹 디자인에 중점을 두고 사용자 경험을 개선하는 프론트엔드 개발자입니다. HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, Node.js, API 등의 기술을 활용하여 웹 프로젝트를 개발해왔고, 협업과 커뮤니케이션, 문제 해결 능력에 뛰어나며
+                  최신 웹 개발 트렌드를 학습하며 열정을 쏟고 있습니다.
                 </p>
-                {alink.map((item) => {
-                return(
-                <>
-                <a href={item.url} ref={item.reff} className={item.class}>
-                  {item.name}
-                </a>
-                </>
-                );
-              })}
+                <div className={styles.buttonWrap}>
+                  {alink.map((item) => {
+                    return (
+                      <>
+                        <a href={item.url} ref={item.reff} className={item.class}>
+                          {item.name}
+                        </a>
+                      </>
+                    );
+                  })}
+                </div>
               </div>
             </div>
             <div className={styles.rightBox}>

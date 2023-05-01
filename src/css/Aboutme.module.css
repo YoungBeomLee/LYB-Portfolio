@@ -143,6 +143,29 @@
 
 /*----------resonsive---------------*/
 
-@media screen and (max-width:1440px) {
- 
+@media screen and (max-width: 1440px) {
+  .leftBox {
+    padding: 0 5rem;
+  }
+  .aboutContent h6 {
+    word-break: keep-all;
+    line-height: 30px;
+  }
+  .aboutContent p {
+    opacity: 1;
+    padding-bottom: 30px;
+    word-break: keep-all;
+  }
+  .aboutContent .ContactBtn {
+    min-width: 100px;
+  }
+  .buttonWrap {
+    display: flex;
+  }
+  .downBtn {
+    min-width: 100px;
+  }
+  .aboutImg {
+    margin-left: -120px;
+  }
 }
