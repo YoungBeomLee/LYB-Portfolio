@@ -117,7 +117,7 @@ const Portfolio = () => {
   return (
     <>
       <div className={styles.Container} id="Portfolio">
-        <div className={styles.portflioTitle}>
+        <div className={styles.portfolioTitle}>
           <h2 data-aos="fade-up" data-aos-duration="1500">
             Portfolio
           </h2>
@@ -222,7 +222,7 @@ const Portfolio = () => {
                           <li>페이지: {item.page}</li>
                         </ul>
                       </div>
-                      <ul className={styles.linkUl}>
+                      <ul className={styles.linkUl2}>
                         <li style={{display:"flex",flexDirection:"column"}}>
                           <img className={styles.qrCodeImg} src={item.qr} alt="" />
                           <span>qr코드 스캔</span>

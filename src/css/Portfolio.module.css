@@ -87,6 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .imgGif {
   width: 70% !important;
@@ -99,23 +100,23 @@
 .portfolioImgbox img:hover {
   animation: downslide 5s ease-in-out infinite;
 }
-.portflioTitle {
+.portfolioTitle {
   text-align: center;
 }
-.portflioTitle span {
+.portfolioTitle span {
   width: 80px;
   height: 2px;
   margin: 25px auto 0;
   display: inline-block;
   background: #bcbcbc;
 }
-.portflioTitle h2 {
+.portfolioTitle h2 {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
   color: #040c2c;
 }
-.portflioTitle p {
+.portfolioTitle p {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -203,6 +204,19 @@
   width: 100px;
   height: 100px;
 }
+.linkUl2{
+  display: flex;
+  margin: 0 10%;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  word-break: keep-all;
+  position: absolute;
+  bottom: 0;
+}
+
+
 
 @keyframes downslide {
   0% {
@@ -219,6 +233,7 @@
 @media screen and (max-width: 1440px) {
   .PortfolioInner {
     flex-direction: column;
+    top: -85px;
   }
   .portfolioLeftbox {
     width: 80%;
@@ -231,30 +246,66 @@
     height: 50%;
     margin: 0 auto;
   }
-  .portfolioTitlebox h2{
-    padding:1rem 0 1rem;
+  .portfolioTitlebox h2 {
+    padding: 1rem 0 1rem;
+    font-size: 2rem;
   }
   .portfolioImgbox {
     width: 100%;
     text-align: center;
-  }
+    top: -75px;
+    }
   .PortfolioTextul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
-    margin-left:7rem;
+    margin-left: 9rem;
   }
-  .PortfolioTextul li{
+  .PortfolioTextul li {
     font-size: 16px;
-    margin-left: 20px;
-
-    
+    line-height: 30px;
+    width: 33.333%;
   }
   .portfolioKeyword {
     position: relative;
-    top: 0;
-    left: 130px;
+    top: -15px;
+    left: 150px;
     font-weight: 500;
     font-size: 20px;
+  }
+  .linkUl {
+    position: absolute;
+    left: 500px;
+    
+  }
+  .linkUl2 {
+    position: absolute;
+    left: 500px;
+    top:70%;
+    
+  }
+  .portfolioTitle {
+   position: relative;
+   top: -50px;
+   
+  }
+  .imgGif {
+    width: 12% !important;
+    height: 80% !important;
+    animation: none !important;
+  }
+  .linkUl2 li:last-child{
+    margin: 0 !important;
+  }
+ 
+  @keyframes downslide {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-80%);
+    }
   }
 }

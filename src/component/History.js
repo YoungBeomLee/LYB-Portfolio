@@ -44,11 +44,11 @@ const History = () => {
           <h2>교육사항</h2>
           <ul className={styles.CardUl}>
             <li>멀티미디어공학과졸업 <br/>2014.03~2021.08</li>
+            <li>프로젝트기반 프론트엔드 SW개발자과정: 2022.11~2023.05</li>
             <li>
               웹퍼블리셔과정: <br />
               2021.09~2022.02 
             </li>
-            <li>프로젝트기반 프론트엔드 SW개발자과정: 2022.11~2023.05</li>
           </ul>
         </div>
         <div className={styles.Card} data-aos="fade-up" data-aos-duration="1500">

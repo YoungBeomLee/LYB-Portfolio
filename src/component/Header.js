@@ -35,7 +35,7 @@ const Header = () => {
           <div className={styles.logoWrap}>
             <Link to="/">
               <h1>
-                <span ref={cube2} style={{ position: "absolute", top: -15, width: 100, height: 100,overflow:"hidden" }}></span>
+                <span ref={cube2} style={{ position: "absolute", top: -25, width: 100, height: 100,overflow:"hidden" }}></span>
               </h1>
             </Link>
           </div>

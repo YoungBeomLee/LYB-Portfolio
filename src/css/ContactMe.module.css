@@ -56,5 +56,15 @@
 /*----------resonsive---------------*/
 
 @media screen and (max-width:1440px) {
- 
+  
+  .Inner{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .ContactInfo {
+    text-align: center;
+  }
+  .nav li{
+   
+  }
 }
