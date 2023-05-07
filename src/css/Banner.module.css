@@ -242,3 +242,14 @@
     max-width: 1000px;
   }
 }
+@media screen and (max-width:1024px){
+  .BannerLeftbox {
+    margin-bottom:5rem 
+   }
+   .circleOne img {
+    display: none;
+  }
+  .ImageBox img{
+    top: 1rem;
+  }
+}

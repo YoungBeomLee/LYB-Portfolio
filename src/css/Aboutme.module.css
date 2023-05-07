@@ -169,3 +169,21 @@
     margin-left: -120px;
   }
 }
+@media screen and (max-width:1024px){
+  .leftBox {
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  .aboutImg {
+    padding: 0 7rem;
+    display: flex;
+    align-items: center;
+  }
+  .aboutImg img{
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px;
+    
+  }
+
+}

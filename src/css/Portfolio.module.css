@@ -87,7 +87,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 .imgGif {
   width: 70% !important;
@@ -204,7 +203,7 @@
   width: 100px;
   height: 100px;
 }
-.linkUl2{
+.linkUl2 {
   display: flex;
   margin: 0 10%;
   line-height: 50px;
@@ -215,9 +214,12 @@
   position: absolute;
   bottom: 0;
 }
-
-
-
+.LinkBtn2Res {
+  display: none;
+}
+.LinkBtnRes {
+  display: none;
+}
 @keyframes downslide {
   0% {
     transform: translateY(0);
@@ -254,7 +256,7 @@
     width: 100%;
     text-align: center;
     top: -75px;
-    }
+  }
   .PortfolioTextul {
     display: flex;
     flex-wrap: wrap;
@@ -277,35 +279,56 @@
   .linkUl {
     position: absolute;
     left: 500px;
-    
   }
   .linkUl2 {
     position: absolute;
     left: 500px;
-    top:70%;
-    
+    top: 70%;
   }
   .portfolioTitle {
-   position: relative;
-   top: -50px;
-   
+    position: relative;
+    top: -50px;
   }
   .imgGif {
     width: 12% !important;
     height: 80% !important;
     animation: none !important;
   }
-  .linkUl2 li:last-child{
+  .linkUl2 li:last-child {
     margin: 0 !important;
   }
- 
+
   @keyframes downslide {
     0% {
       transform: translateY(0);
     }
-  
+
     100% {
       transform: translateY(-80%);
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolioKeyword {
+    left: 120px;
+  }
+  .PortfolioTextul {
+    margin-left: 7rem;
+  }
+  .linkUl {
+    position: absolute;
+    left: 150px;
+    top: -90px;
+   
+  }
+  .linkUl2 {
+    position: absolute;
+    left: 180px;
+    top: -90px;
+  }
+  .linkUl2 li:first-child span {
+    display: none;
+  }
+ 
 }

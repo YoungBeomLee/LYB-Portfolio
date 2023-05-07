@@ -89,22 +89,30 @@ header {
 /*----------resonsive---------------*/
 
 @media screen and (max-width: 1440px) {
- .gnbWrap {
-  padding: 1rem 5rem;
-  justify-content: center;
+  .gnbWrap {
+    padding: 1rem 5rem;
+    justify-content: center;
+  }
+  .gnbMenu {
+    padding-right: 1rem;
+  }
  
- }
-.gnbMenu{
-  padding-right: 1rem;
- }
- .logoWrap span{
-  padding-left: 20px;
- }
 }
 @media screen and (max-width: 1024px) {
-  .gnbWrap {
-    padding: 0 2rem 0;
+ .logoWrap span {
+    left: -30px;
   }
+  .gnbWrap {
+    padding: 1rem 2rem;
+    width: 100%;
+
+  }
+  .menu li a {
+    font: 600 12px "Montserrat", sans-serif;
+    color: #040c2c;
+    
+  }
+ 
 }
 @media screen and (max-width: 768px) {
   .gnbWrap {

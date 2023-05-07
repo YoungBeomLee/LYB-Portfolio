@@ -94,7 +94,7 @@ const Portfolio = () => {
       page: "메인1, 상세상품게시판4, 검색페이지1, 상품업로드1, 리뷰업로드1, 리뷰페이지1",
       link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
       link2: "https://github.com/YoungBeomLee/4niture-react-front",
-    }
+    },
   ];
 
   let slideobj2 = [
@@ -223,11 +223,11 @@ const Portfolio = () => {
                         </ul>
                       </div>
                       <ul className={styles.linkUl2}>
-                        <li style={{display:"flex",flexDirection:"column"}}>
+                        <li style={{ display: "flex", flexDirection: "column" }}>
                           <img className={styles.qrCodeImg} src={item.qr} alt="" />
                           <span>qr코드 스캔</span>
                         </li>
-                        <li style={{marginLeft:50}}>
+                        <li style={{ marginLeft: 50 }}>
                           <a href={item.link2} ref={a2Ref} className={[styles.LinkBtn2, styles.LinkBtn22].join(" ")}>
                             깃허브보기
                           </a>

@@ -89,8 +89,19 @@
     display: flex;
     flex-wrap: nowrap;
     margin-right: -15px;
-    margin-left:15px;
+    margin-left:-1px;
     box-sizing: border-box;
     width: 100%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .CardUl li {
+    font-weight: 400;
+    font-size: 0.8em;
+   
+  }
+  .CardUl  {
+    padding-left: 1em;
+   
   }
 }
