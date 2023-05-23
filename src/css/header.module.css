@@ -116,11 +116,17 @@ header {
 }
 @media screen and (max-width: 768px) {
   .gnbWrap {
-    padding: 0 2rem 0;
+    padding: 10px 1rem 0;
   }
+  .menu {
+   column-gap: 25px;
+   
+  }
+ 
 }
 @media screen and (max-width: 576px) {
   .gnbWrap {
     padding: 0 2rem 0;
   }
+  
 }

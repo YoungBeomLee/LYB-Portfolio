@@ -253,3 +253,17 @@
     top: 1rem;
   }
 }
+@media screen and (max-width:768px){
+  .innerWrap {
+    flex-direction: column;
+  }
+  .ImageBox img{
+    top:-15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px;
+    width: 60%;
+  }
+  .bannerText{
+    
+  }
+}
