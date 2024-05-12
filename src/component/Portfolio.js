@@ -92,7 +92,7 @@ const Portfolio = () => {
       tech: "vscode,github,Figma",
       deploy: "Vercell, CloudType",
       page: "메인1, 상세상품게시판4, 검색페이지1, 상품업로드1, 리뷰업로드1, 리뷰페이지1",
-      link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
+      link: "https://react4niture.netlify.app/",
       link2: "https://github.com/YoungBeomLee/4niture-react-front",
     },
   ];
@@ -110,7 +110,7 @@ const Portfolio = () => {
       deploy: "Vercell, CloudType",
       page: "메인페이지,상품페이지,리뷰페이지",
       qr: qrcode,
-      link: "https://4niture-react-front-dkr64oruw-youngbeomlee.vercel.app/",
+      link: "https://react4niture.netlify.app/",
       link2: "https://github.com/YoungBeomLee/react-native-project",
     },
   ];
