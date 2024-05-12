@@ -36,7 +36,7 @@ const History = () => {
             </li>
             <li>
               <span>이메일:</span>
-              <span>krkr127127@naver.com</span>
+              <span>krkr127127@naver.com, edlee127127@gmail</span>
             </li>
           </ul>
         </div>

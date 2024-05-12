@@ -28,7 +28,7 @@ const ContactMe = () => {
               </li>
               <li>
                 <AiOutlineMail></AiOutlineMail>
-                <p><span>이메일:</span> <span>krkr127127@naver.com</span></p>
+                <p><span>이메일:</span><span>krkr127127@naver.com, edlee127127@gmail.com</span></p>
               </li>
               <li>
                 <FaGithub></FaGithub>
