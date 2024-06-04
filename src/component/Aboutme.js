@@ -12,7 +12,7 @@ const Aboutme = () => {
   useEffect(() => {
     AOS.init();
   });
-  const ImageRef = useRef(null);
+  /*const ImageRef = useRef(null);*/
   const h2Ref = useRef(null);
   const h6Ref = useRef(null);
   const a1Ref = useRef(null);
@@ -55,7 +55,7 @@ const Aboutme = () => {
     },
     {
       name: "이력서",
-      url: "https://drive.google.com/file/d/1Yxru-iqoHUc3XaTPKJeIHcyyDptovxw8/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1CdOP2y6ZRVVgfWOUMA21YwvQwTKOS4Iv/view",
       class: styles.downBtn,
       reff: a2Ref,
     },
