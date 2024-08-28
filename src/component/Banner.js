@@ -71,7 +71,7 @@ const Banner = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://drive.google.com/file/d/1jJXmLdjm6HJ68MAZ3K30AqZzbMeXtIXB/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1ZntQDru1BirTsO8nBR5dTgLaH68pnBkp/view?usp=sharing">
                       <span>이력서</span>
                     </a>
                   </li>
