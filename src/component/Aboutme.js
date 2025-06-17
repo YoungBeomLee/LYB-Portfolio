@@ -55,7 +55,7 @@ const Aboutme = () => {
     },
     {
       name: "이력서",
-      url: "https://drive.google.com/file/d/1CdOP2y6ZRVVgfWOUMA21YwvQwTKOS4Iv/view",
+      url: "https://drive.google.com/file/d/1OzpNRSc75WIVNRN1XkafcW6Ylw7DM_5J/view?usp=sharing",
       class: styles.downBtn,
       reff: a2Ref,
     },
